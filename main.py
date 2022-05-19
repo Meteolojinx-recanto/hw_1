@@ -1,10 +1,8 @@
-def DivisibleBy2(num):
-    if num % 2 == 0:
-        return True
-    else:
-        return False
+def divisible_by_2(num):
+    return len(num) % 2 == 0
 
-numbers = int(input('Введите число: '))
+numbers = input('Введите число ').split()
+numbers_list = list(map(divisible_by_2, numbers))
 
-print(DivisibleBy2(numbers))
-
+print(numbers)
+print(numbers_list)
